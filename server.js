@@ -7,7 +7,7 @@ dotenv.config()
 const app = express()
 const PORT = 3001
 
-app.use(cors({ origin: ['http://localhost:5173', 'https://your-app.vercel.app' ]}))
+app.use(cors({ origin: ['http://localhost:5173', 'https://dev-ops-copilot.vercel.app' ]}))
 app.use(express.json())
 
 app.post('/api/chat', async (req, res) => {
