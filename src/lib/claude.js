@@ -9,8 +9,7 @@ When analyzing failures:
 Be technical and specific. No fluff. Write like a senior engineer explaining to a peer.
 Use **bold** for key terms, backticks for inline code, and triple-backtick blocks for multi-line code.`
 
-const API_URL = 'http://localhost:3001/api/chat'
-
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api/chat'
 export async function streamMessage(messages, onChunk) {
   const res = await fetch(API_URL, {
     method: 'POST',
