@@ -1,0 +1,31 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:      #0f1117;
+  --surface: #161b25;
+  --line:    #1e2736;
+  --line2:   #2a3545;
+  --text:    #e2eaf5;
+  --mid:     #7a90a8;
+  --muted:   #4a6070;
+  --accent:  #4f9eff;
+  --err:     #ff5c5c;
+  --warn:    #ffaa00;
+  --mono:    'IBM Plex Mono', monospace;
+  --serif:   'DM Serif Display', serif;
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+}
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--line2); border-radius: 2px; }
